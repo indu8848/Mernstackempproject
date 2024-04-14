@@ -14,7 +14,6 @@ app.use(cors());
 app.use('/api',userRoute)
 app.use('/api',postroute);
 
-
 app.listen(PORT,()=>{
     console.log(`${PORT} is up and running`);
 })

@@ -44,32 +44,6 @@ router.get('/view', async (req, res) => {
   
   
 
-// // DELETE an employee by name
-// router.delete('/api/delete/:name', async (req, res) => {
-//     const { name } = req.params;
-  
-//     try {
-//       // Find the employee by name and delete it
-//       const deletedEmployee = await Employee.findOneAndDelete({ name });
-  
-//       // If employee is not found, return 404
-//       if (!deletedEmployee) {
-//         return res.status(404).json({ error: "Employee not found" });
-//       }
-  
-//       // Send success response
-//       res.status(204).end();
-//     } catch (error) {
-//       console.error("Error deleting employee:", error);
-//       res.status(500).json({ error: "Internal server error" });
-//     }
-//   });
-  
-
-
-
-
-
 
 
   router.put('/update/:name', async (req, res) => {
